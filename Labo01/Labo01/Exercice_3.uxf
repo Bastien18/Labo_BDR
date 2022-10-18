@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>400</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Livre
+--
+_n° d'exemplaire_
+titre
+auteur
+genre
+etat du livre
+n° ISBN
+editeur
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>20</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Adhérents
+--
+_code unique_
+nom
+prénom
+adresse
+    numéro
+    rue
+    ville
+    npa
+n° téléphone</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>300</x>
+      <y>590</y>
+      <w>270</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CI: Si l'état du livre est endommagé 
+le livre n'est pas empruntable mais 
+uniquement consultable sur place
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>550</y>
+      <w>60</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>190</y>
+      <w>100</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..3
+Emprunte V</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>240</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Emprunt
+--
+durée</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>260</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>610</x>
+      <y>350</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CI: Durée max d'un emprunt 
+de 21 jours
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>280</y>
+      <w>70</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>190</y>
+      <w>90</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2= 1..5
+Réserve V</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>40</x>
+      <y>680</y>
+      <w>320</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Modif: On peut améliorer le schéma en ajoutant l'attribut liste des livres, dans Emprunt, afin d'avoir accès aux livres empruntés à chaque emprunt
+bg=green
+style=wordwrap
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>90</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Collection de disque
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>260</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Disque
+--
+_titre_
+année de parution
+producteur</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>150</y>
+      <w>90</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..*
+Contient V</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>460</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Piste
+--
+durée
+date d'enregistrement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>460</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Oeuvre
+--
+_n° d'identification_
+titre
+année de parution
+artiste original
+genre</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>680</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Interprète
+--
+_N° d'identification_
+nom
+prénom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>540</y>
+      <w>130</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..*
+Interprété par V</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>500</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=[N° de piste]-
+m1= 1
+m2=1..*
+</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>330</y>
+      <w>50</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>590</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Utilise
+--
+instrument</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>610</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+</diagram>
