@@ -16,3 +16,9 @@ Commande :
 DELETE FROM department WHERE dnumber = 5;
 ```
 La suppression à bien eu lieu. La table department n'est pas lié a d'autre table donc tout bon pour delete.
+
+### 1.4 Implémentation des contraintes d'intégrité
+- 1.4.3
+a) Non l'insertion n'est plus possible cela est tout à fait normal puisque l'on essaie d'insérer des clefs qui font référence sur une les clefs d'une autre tables qui n'a pas encore été peuplée.
+b) Desactiver temporairement les contraintes afin de peupler les tables.
+
