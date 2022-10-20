@@ -20,13 +20,13 @@ La suppression à bien eu lieu. La table department n'est pas lié a d'autre tab
 ### 1.4 Implémentation des contraintes d'intégrité
 - 1.4.3
 
-  a) Non l'insertion n'est plus possible cela est tout à fait normal puisque l'on essaie d'insérer des clefs qui font référence sur une les clefs d'une autre tables qui    n'a pas encore été peuplée.
+  a) Non l'insertion n'est plus possible cela est tout à fait normal puisque l'on essaie d'insérer des clefs qui font référence sur les clefs d'une autre tables qui    n'a pas encore été peuplée.
   
   b) Desactiver temporairement les contraintes afin de peupler les tables.
   
  - 1.4.4
 
-  Impossible d'insérer Steve Jobs et le département car chacun a une clé faisant référence à l'autre. Pour résoudre ce problème il faut changer la granularité des contraintes foreign key en referred (attent la fin de la transaction pour valider les contraintes referentielle) ainsi il est possible d'insérer les deux tuples pendant la même transaction, sans contrainte referentielle, et faire la validation après que les deux insertions ait été faîtes.
+    Impossible d'insérer Steve Jobs et le département car chacun a une clé faisant référence à l'autre. Pour résoudre ce problème il faut changer la granularité des contraintes foreign key en referred (attent la fin de la transaction pour valider les contraintes referentielle) ainsi il est possible d'insérer les deux tuples pendant la même transaction, sans contrainte referentielle, et faire la validation après que les deux insertions ait été faîtes.
   
   - 1.4.5
   
