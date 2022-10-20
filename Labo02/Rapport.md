@@ -40,6 +40,20 @@ La suppression à bien eu lieu. La table department n'est pas lié a d'autre tab
   
 ### 1.5 Affinement des contraintes d'intégrité référentielle
 
+  - 1.5.1 
+  
+  Lors de la supression d'un superviseur les employés référant sur leur superviseur doivent mettre à jour leur clef super_ssn à null. Pour cela on ajoute à la contrainte de foreign key de super_ssn ON delete set null.
+  
+  Cela pose aussi problème pour la table departement qui perd son manager. On peut faire le même ajustement qu'au point précédent cependant il faut enlever la contrainte not null de la clefs mgr_ssn pour dire qu'un departement peut ne plus avoir de manager temporairement.
+  
+  Enfin il reste la table works_on pour chaque projet d'employé. Le soucis c'est qu'en plus d'être not null, essn est aussi primary key. On ne peut donc pas supprimer sa référence sinon une relation works_on perds une des deux clefs primaire. Nous avons tous simplement décider que si un employé est suprimmer on perd la relation qui le liait avec ses projet. Utilisé ON DELETE CASCADE pour ce faire.
+  
+  - 1.5.2
+
+
+  
+  
+
   
   
   
